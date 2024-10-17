@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "procrash",
+  "version": "1.0",
+  "permissions": [
+    "tabs",
+    "notifications",
+    "background",
+    "scripting",
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "Procrash_logo.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
